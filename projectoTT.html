@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <link rel="icon" href="pis.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+    <title>My OTT</title>
+    <style>
+        nav {
+            height: 70px;
+            width: 100%;
+            /* background-color: rgb(70, 162, 147); */
+            display: flex;
+            background: rgb(219, 217, 217,0.4);
+            /* backdrop-filter: blur(8px); */
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            z-index: 100;
+
+        }
+        .nav-logo img {
+            height: 65px;
+            width: 120px;
+            margin: 10px 0px 7px;
+        }
+        nav .nav-items {   
+            position: absolute;
+            right: 20px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px 5px;
+            color: rgb(220, 142, 142);
+            display: inline;
+        }
+
+        .nav-items:hover {
+            filter: blur(-1.8px);
+        }
+
+        .nav-items a:hover {
+            color: rgb(9, 9, 145);
+            /* filter: blur(0px); */
+        }
+
+        .nav-items:hover a {
+            /*color: rgb(74, 52, 52); */
+            filter: blur(1px);
+        }
+        .carousel-inner img {
+            height: 600px;
+            width: 80%;
+        }
+        .carousel-inner {
+          margin: 10px 0px 0px 140px;  
+        }
+        .carousel-control-prev-icon{
+            position: relative;
+            left: 100px;
+        }
+        .carousel-control-next-icon{
+            position: relative;
+            right: 100px;
+        }
+        .frequent img{
+            height: 200px;
+            width: 360px;
+            margin: 3px;
+        }
+        .frequent img:hover{
+            scale: 1.1;
+            border-radius: 10px;
+
+        }
+        .recent img{
+            height: 350px;
+            width: 270px;
+            margin: 4px;
+        }
+        .recent img:hover{
+            scale: 1.1;
+            border-radius: 10px;
+        }
+        .rated img{
+            height: 350px;
+            width: 270px;
+            margin: 4px;
+        }
+        .rated img:hover{
+            scale: 1.1;
+            border-radius: 10px;
+        }
+        .favorites img{
+            height: 350px;
+            width: 270px;
+            margin: 4px;
+        }
+        .favorites img:hover{
+            scale: 1.1;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="images.jpg" alt="" />
+        </div>
+        <div class="nav-items">
+            <a href="#carouselExampleAutoplaying">Home</a>
+            <a href="#freq">Frequently watched</a>
+            <a href="#release">Recently released</a>
+            <a href="#rate">Top Rated</a>
+            <a href="#favor">Favourites</a>
+            <a href="">about</a>
+            <a href="">signup/signIn</a>
+        </div>
+    </nav>
+    <!-- Home start -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2395/1402395-i-f3427475dc7c" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/767/1410767-i-c49c10eea7be" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9027/1539027-i-c12964d6e61a" class="d-block" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div><br><br><br>
+    <!-- home end -->
+    <div class="frequent">
+        <h2>frequent watched</h2>
+        <div class = "frequent-image" id="freq">
+            <img src="istockphoto-469569148-2048x2048.jpg" alt="">
+            <img src="Youth-soccer-indiana.jpg" alt="">
+            <img src="istockphoto-499194673-2048x2048.jpg" alt="">
+            <img src="istockphoto-1215280342-2048x2048.jpg" alt="">
+            <img src="istockphoto-1140141014-170667a.webp" alt="">
+            <img src="istockphoto-949190756-612x612.jpg" alt="">
+            <img src="istockphoto-626535710-2048x2048.jpg" alt="">
+            <img src="istockphoto-617866436-2048x2048.jpg" alt="">
+            <img src="Youth-soccer-indiana.jpg" alt="">
+            <img src="Youth-soccer-indiana.jpg" alt="">
+
+        </div>
+    </div><br><br><br>
+    <div class="recent">
+        <h2>Recent released</h2>
+        <div class="released-image" id="release">
+            <img src="wallpapersden.com_barbie-2023-movie_ws.jpg" alt="">
+            <img src="wallpapersden.com_poster-of-the-marvels-movie-2023-8k_ws.jpg" alt="">
+            <img src="wallpapersden.com_haunted-mansion-2023-movie_ws.jpg" alt="">
+            <img src="wallpapersden.com_poster-of-meg-2-the-trench_ws.jpg" alt="">
+            <img src="wallpapersden.com_prabhas-kalki-movie_ws.jpg" alt="">
+            <img src="wallpapersden.com_ryan-gosling-in-movie-barbie_ws.jpg" alt="">
+            <img src="wallpapersden.com_saw-x-movie-2023_ws.jpg" alt="">
+            <img src="wallpapersden.com_poster-of-rebel-moon-movie_ws.jpg" alt="">
+            <img src="wallpapersden.com_the-trench-meg-2-movie_ws.jpg" alt="">
+            <img src="wallpapersden.com_robert-downey-jr-in-movie-oppenheimer_ws.jpg" alt="">
+        </div>
+    </div><br><br><br>
+    <div class = "rated">
+        <h2>Top rated</h2>
+        <div class="rated-vid" id="rate">
+            <img src="istockphoto-688783000-612x612.jpg" alt="">
+            <img src="istockphoto-507419740-612x612.jpg" alt="">
+            <img src="istockphoto-1041176840-612x612.jpg" alt="">
+            <img src="istockphoto-1196709825-612x612.jpg" alt="">
+            <img src="istockphoto-1202770156-612x612.jpg" alt="">
+            <img src="istockphoto-1214528636-612x612.jpg" alt="">
+            <img src="istockphoto-1321462129-612x612.jpg" alt="">
+            <img src="istockphoto-1338846162-612x612.jpg" alt="">
+            <img src="istockphoto-1340577488-612x612.jpg" alt="">
+            <img src="istockphoto-1476973020-612x612.jpg" alt="">
+        </div>
+    </div><br><br><br>
+    <div class="favorites">
+        <h2>favorites</h2>
+        <div class="favorate" id="favor">
+            <img src="images.jpg" alt="">
+            <img src="images (1).jpg" alt="">
+            <img src="images (2).jpg" alt="">
+            <img src="images (3).jpg" alt="">
+            <img src="images (4).jpg" alt="">
+            <img src="images (5).jpg" alt="">
+            <img src="images (6).jpg" alt="">
+            <img src="download (3).jpg" alt="">
+            <img src="download (1).jpg" alt="">
+            <img src="download.jpg" alt="">
+        </div>
+    </div>
+    <div></div>
+</body>
+
+</html>
